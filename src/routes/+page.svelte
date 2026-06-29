@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import headshot from '$lib/assets/EditedLandingHeadshot.JPG';
 	import slicer from '$lib/assets/Slicer.png';
 	import stillLife from '$lib/assets/Still Life, 2025.jpeg';
@@ -44,14 +45,14 @@
 <div id="works" class="works-section">
 	<h2 class="works-title">Select Works</h2>
 	<div class="works-photos">
-		<a href="/engineering-design" class="work-photo p1" aria-label="Engineering Design"><img src={slicer} alt="Slicer" /></a>
-		<a href="/visual-art" class="work-photo p2" aria-label="Visual Art"><img src={stillLife} alt="Still Life, 2025" /></a>
-		<a href="/research-writing" class="work-photo p4" aria-label="Research + Writing"><img src={sculptureHead} alt="Sculpture of a Woman's Head" /></a>
+		<a href={resolve('/engineering-design')} class="work-photo p1" aria-label="Engineering Design"><img src={slicer} alt="Slicer" /></a>
+		<a href={resolve('/visual-art')} class="work-photo p2" aria-label="Visual Art"><img src={stillLife} alt="Still Life, 2025" /></a>
+		<a href={resolve('/research-writing')} class="work-photo p4" aria-label="Research + Writing"><img src={sculptureHead} alt="Sculpture of a Woman's Head" /></a>
 	</div>
 	<div class="works-categories">
-		<a href="/engineering-design" class="cat">ENGINEERING DESIGN</a>
-		<a href="/visual-art" class="cat">VISUAL ART</a>
-		<a href="/research-writing" class="cat">RESEARCH + PEDAGOGY</a>
+		<a href={resolve('/engineering-design')} class="cat">ENGINEERING DESIGN</a>
+		<a href={resolve('/visual-art')} class="cat">VISUAL ART</a>
+		<a href={resolve('/research-writing')} class="cat">RESEARCH + PEDAGOGY</a>
 	</div>
 </div>
 

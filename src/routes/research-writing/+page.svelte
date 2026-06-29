@@ -1,9 +1,10 @@
 <script>
+	import { resolve } from '$app/paths';
 	import makerspacePhoto from '$lib/assets/MakerspacePhoto.jpeg';
 </script>
 
 <header class="sticky-header">
-	<a class="header-logo" href="/">portfolio | rou·kay·uh·tou fay</a>
+	<a class="header-logo" href={resolve('/')}>portfolio | rou·kay·uh·tou fay</a>
 </header>
 
 <main class="page">

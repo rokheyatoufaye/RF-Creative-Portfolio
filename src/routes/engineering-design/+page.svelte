@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import combustionRender from '$lib/assets/Combustion Engine Rendering.png';
 	import combustionDrawing from '$lib/assets/Combustion Engine Technical Drawing.png';
 	import fireletFinalPhoto from '$lib/assets/FireletFinalPhoto.jpg';
@@ -80,7 +81,7 @@
 <svelte:window on:keydown={handleKey} />
 
 <header class="sticky-header">
-	<a class="header-logo" href="/">portfolio | rou·kay·uh·tou fay</a>
+	<a class="header-logo" href={resolve('/')}>portfolio | rou·kay·uh·tou fay</a>
 </header>
 
 <div class="gallery">

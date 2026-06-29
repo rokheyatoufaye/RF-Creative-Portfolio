@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import cmsMural from '$lib/assets/Compact Muon Solenoid (CMS) Detector Mural, Acrylic on Wall, 2026.png';
 	import geejNak from '$lib/assets/Géej Nak, Oil on Canvas, 2025.jpeg';
 	import emmaAmos from "$lib/assets/Study of Emma Amos's Flower Sniffer, Oil on Canvas, 2025.jpeg";
@@ -24,7 +25,7 @@
 <svelte:window on:keydown={handleKey} />
 
 <header class="sticky-header">
-	<a class="header-logo" href="/">portfolio | rou·kay·uh·tou fay</a>
+	<a class="header-logo" href={resolve('/')}>portfolio | rou·kay·uh·tou fay</a>
 </header>
 
 <main class="page">
