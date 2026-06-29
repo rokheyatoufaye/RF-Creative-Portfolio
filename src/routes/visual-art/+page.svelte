@@ -297,4 +297,20 @@ But I subsist.
 		display: block;
 		cursor: default;
 	}
+
+	/* ── RESPONSIVE ─────────────────────────────── */
+	@media (max-width: 600px) {
+		.gallery { grid-template-columns: 1fr; }
+
+		/* Poem overlay: stack image above poem */
+		.poem-panel {
+			grid-template-columns: 1fr;
+			overflow-y: auto;
+			max-height: 90vh;
+		}
+
+		.poem-left img { max-height: 40vh; object-fit: contain; }
+
+		.poem-text { font-size: 0.85rem; }
+	}
 </style>

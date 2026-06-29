@@ -104,7 +104,7 @@
 			<p class="modal-meta">{activeProject.meta}</p>
 			<p class="modal-desc">{activeProject.desc}</p>
 			<div class="modal-images {activeProject.layout}">
-				{#each activeProject.images as img}
+				{#each activeProject.images as img (img.src)}
 					<img src={img.src} alt={img.alt} class="modal-img" />
 				{/each}
 			</div>
@@ -254,7 +254,7 @@
 		font-style: italic;
 		font-weight: 400;
 		font-size: clamp(1.4rem, 2.2vw, 1.9rem);
-		color: #5b8fa3;
+		color: #29170f;
 		margin: 0 0 0.4rem 0;
 		padding-right: 2rem;
 	}
@@ -263,7 +263,7 @@
 		font-family: 'Montserrat', sans-serif;
 		font-size: clamp(0.75rem, 1vw, 0.9rem);
 		font-weight: 500;
-		color: #5b8fa3;
+		color: #29170f;
 		opacity: 0.55;
 		margin: 0 0 1.5rem 0;
 	}
@@ -272,7 +272,7 @@
 		font-family: 'Montserrat', sans-serif;
 		font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 		font-weight: 500;
-		color: #5b8fa3;
+		color: #29170f;
 		line-height: 1.6;
 		margin: 0 0 2rem 0;
 	}
@@ -291,5 +291,59 @@
 		width: 100%;
 		height: auto;
 		display: block;
+	}
+
+	/* ── RESPONSIVE ─────────────────────────────── */
+	@media (max-width: 768px) {
+		/* Gallery: drop fullscreen constraint, go 2-col scrollable */
+		.gallery {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: none;
+			height: auto;
+			overflow: visible;
+		}
+
+		.tile:nth-child(1),
+		.tile:nth-child(2),
+		.tile:nth-child(3),
+		.tile:nth-child(4),
+		.tile:nth-child(5) {
+			grid-column: span 1;
+			height: 48vw;
+		}
+
+		/* Show overlay always on touch (no hover) */
+		.tile-overlay {
+			opacity: 1;
+			background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);
+		}
+
+		/* Modal: full width, bottom-anchored */
+		.modal-overlay {
+			padding: 0.75rem;
+			align-items: flex-end;
+		}
+
+		.modal {
+			max-height: 88vh;
+			padding: 1.25rem 1rem;
+		}
+
+		/* All image grids collapse to single column */
+		.modal-images.combustion,
+		.modal-images.equal,
+		.modal-images.three { grid-template-columns: 1fr; }
+
+		.modal-images.single { max-width: 100%; }
+	}
+
+	@media (max-width: 480px) {
+		.gallery { grid-template-columns: 1fr; }
+
+		.tile:nth-child(1),
+		.tile:nth-child(2),
+		.tile:nth-child(3),
+		.tile:nth-child(4),
+		.tile:nth-child(5) { height: 65vw; }
 	}
 </style>

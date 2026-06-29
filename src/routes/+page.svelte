@@ -357,4 +357,77 @@
 		font-family: 'Inter', sans-serif;
 		font-size: clamp(0.8rem, 1.1vw, 0.95rem);
 	}
+
+	/* ── RESPONSIVE ─────────────────────────────── */
+	@media (max-width: 768px) {
+		.sticky-header {
+			height: auto;
+			padding: 0.75rem 1.25rem;
+			gap: 0.5rem;
+		}
+
+		.header-logo,
+		.header-nav a {
+			font-size: 0.9rem;
+		}
+
+		.header-nav { gap: 1rem; }
+
+		/* Name scales with vw naturally; just tighten transform origin */
+		.sage-section { padding-bottom: 3rem; }
+
+		/* Portrait: pull out of absolute flow, center below name */
+		.hero-portrait {
+			position: relative;
+			top: auto;
+			left: auto;
+			width: 80%;
+			max-width: 380px;
+			margin: 1.5rem auto 0;
+			display: block;
+		}
+
+		/* About: single column, drop the large top padding */
+		.about {
+			grid-template-columns: 1fr;
+			padding: 0 1.25rem;
+		}
+
+		.about-bio { padding-top: 2rem; }
+
+		.about-right {
+			padding-top: 2rem;
+			text-align: left;
+		}
+
+		.select-interview {
+			max-width: 100%;
+			margin-left: 0;
+			text-align: left;
+		}
+
+		/* Works: stack photos vertically */
+		.works-photos {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 2rem;
+			gap: 1.25rem;
+		}
+
+		.work-photo {
+			flex: 0 0 auto;
+			width: min(72%, 300px);
+		}
+
+		.work-photo.p1,
+		.work-photo.p4 { align-self: center; }
+	}
+
+	@media (max-width: 480px) {
+		.name-first { font-size: 16vw; }
+		.name-last  { font-size: 21vw; }
+
+		.cat { font-size: clamp(1.6rem, 8vw, 3rem); }
+	}
 </style>

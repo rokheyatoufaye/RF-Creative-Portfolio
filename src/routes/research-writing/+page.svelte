@@ -60,7 +60,7 @@
 		font-style: italic;
 		font-weight: 400;
 		font-size: clamp(1.1rem, 1.8vw, 1.6rem);
-		color: #5b8fa3;
+		color: #29170f;
 		margin: 0 0 clamp(1.5rem, 3vw, 2.5rem) 0;
 	}
 
@@ -81,8 +81,19 @@
 		font-family: 'Montserrat', sans-serif;
 		font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 		font-weight: 500;
-		color: #5b8fa3;
+		color: #29170f;
 		line-height: 1.6;
 		margin: 0;
+	}
+
+	/* ── RESPONSIVE ─────────────────────────────── */
+	@media (max-width: 768px) {
+		.project-layout {
+			grid-template-columns: 1fr;
+		}
+
+		.project-img {
+			max-width: 100%;
+		}
 	}
 </style>
