@@ -15,7 +15,9 @@
 		{
 			title: 'Combustion Engine',
 			meta: 'SolidWorks · 2022',
-			desc: 'My first project in SolidWorks was a team effort with two other engineers: modeling a functional four cylinder combustion engine component by component. As the design engineer, I was responsible for the component geometry and the final rendered presentation. Every part, from the pistons to the camshafts, had to be designed to tolerance and fit within a system that actually moved. Getting the geometry right was one problem; understanding how each component related to the others was another. It changed how I think about mechanical systems.',
+			desc: 'Team modeling project designing a functional combustion engine component by component. Responsible for component geometry, tolerance fitting, and final rendered presentation.',
+			role: 'Design Engineer',
+			scope: 'Pistons, camshafts, and full assembly integration',
 			thumbnail: combustionRender,
 			images: [
 				{ src: combustionRender, alt: 'Combustion engine 3D render' },
@@ -26,7 +28,9 @@
 		{
 			title: 'Firelet: A Wearable Fire Detection Device',
 			meta: 'Onshape · Arduino IDE · 2023',
-			desc: "The Firelet started with a question: what does fire safety look like for someone who can't hear an alarm? Designed for elderly users with sensory or mobility impairments, this wearable bracelet integrates smoke detection, temperature sensing, and multi-modal alerts (vibration, light, and sound) in a form meant to be worn through the night. Working as the design engineer on a team, I led the CAD in Onshape and fabricated the housing on a Prusa 3D printer. The project was grounded in human-centered design from the start. Empathy mapping early on shaped every constraint including how it would feel on a user's wrist at 2 a.m.",
+			desc: 'Wearable fire alert bracelet designed for elderly users with sensory or mobility impairments. Integrates smoke detection, temperature sensing, and vibration, light, and sound alerts in a form meant to be worn through the night.',
+			role: 'Design Engineer',
+			scope: 'CAD in Onshape, 3D printed housing, empathy mapping and user research',
 			thumbnail: fireletFinalPhoto,
 			images: [
 				{ src: fireletFinalPhoto, alt: 'Firelet final photo' },
@@ -37,8 +41,10 @@
 		},
 		{
 			title: 'IMELiS: Interactive Museum Exhibition Lighting System',
-			meta: 'Arduino · C++ · Tinkercad · 2026',
-			desc: 'For my final project in Elements of Electrical Engineering, I designed an interactive lighting system for an art museum gallery with a skylight, where the exhibition responds to the daylight in the room. The system reads ambient light through a photoresistor and shifts between three states: bright daylight, when the fixtures power down and a fan runs to cool the space; dim light, when a standby light comes on to simulate typical gallery conditions; and full dark, when a visitor-controlled RGB light and ambient sound activate. I built the circuit around an Arduino with three sensors and five actuators, and wrote all the C++ myself. Designing around a real architectural condition — a skylit room with changing light — made me think about the gallery and the system as one responsive environment rather than two separate things.',
+			meta: 'Arduino · C++ · TinkerCAD · 2026',
+			desc: 'Responsive lighting system for a skylit art gallery that shifts behavior based on ambient light levels. Three states (full daylight, dim, and dark) each trigger a different environmental condition, from passive cooling to RGB lighting controlled by the visitor and ambient sound. Designing around a skylit room made me think about the gallery and the system as one responsive environment.',
+			role: 'Solo designer and engineer',
+			scope: 'Arduino circuit design, C++ programming, photoresistor and actuator integration',
 			thumbnail: imelisBuild,
 			images: [
 				{ src: imelisBuild, alt: 'IMELiS physical circuit build' },
@@ -47,9 +53,11 @@
 			layout: 'equal'
 		},
 		{
-			title: 'Air-Powered Mandoline Slicer Design',
-			meta: 'SolidWorks · Manual Machining',
-			desc: 'For this team project, I designed an automatic mandoline slicer driven by an air engine, where a flywheel and slider-crank mechanism convert rotary motion into a four-inch linear cutting stroke. I was responsible for the manufacturing and drafting side of the build, producing the detail drawings, setting tolerances, and machining my parts to spec. That included selecting materials for function: food-safe PLA for the mandoline shell, 17-4 PH stainless steel for the blade, and 5052 aluminum for the welded sheet-metal chassis. Each part I made was verified against dimensional inspection records before assembly, which taught me how much of good design happens after the model is finished, in the move from drawing to machined part.',
+			title: 'Air-Powered Mandoline Slicer',
+			meta: 'SolidWorks · Fusion 360 · Manual Machining · 2024',
+			desc: 'Automatic mandoline slicer driven by an air engine, using a flywheel and slider-crank mechanism to convert rotary motion into a four-inch linear cutting stroke. Materials selected for function: food-safe PLA for the shell, 17-4 PH stainless steel for the blade, and 5052 aluminum for the welded chassis. Each part was verified against dimensional inspection records before assembly.',
+			role: 'Manufacturing and Drafting Engineer',
+			scope: 'Detail drawings, tolerance setting, material selection, fabrication of machined parts, and CNC flywheel machining via Fusion 360 CAM',
 			thumbnail: slicerPhoto,
 			images: [
 				{ src: slicerPhoto, alt: 'Machined slicer components' },
@@ -59,8 +67,10 @@
 		},
 		{
 			title: 'In-Orbit Heated Press Manufacturing Experiment',
-			meta: 'Fusion 360 · COSMIC Capstone Challenge',
-			desc: "For my capstone project in Mechanical Engineering Design 2, I led a nine-person team designing a semi-autonomous orbital manufacturing payload for the COSMIC Capstone Challenge. The system is designed to manufacture and inspect flat carbon fiber reinforced polymer test strips in microgravity through three integrated operations: mechanical compression via stepper-motor-driven lead screws, thermal curing via embedded cartridge heaters operating within a 300 W sustained power limit, and post-cure inspection using onboard IR thermography and 3D surface profilometry. My role combined project management with hands-on technical work. I established team structure in the planning phase, maintained the Gantt chart and work breakdown structure throughout the semester, led the client meeting that finalized the experiment concept, and authored the executive summary and manufacturing and cost model sections of the final report. I also co-led the CAD subteam, contributing to part and assembly modeling in Fusion 360, overseeing the subteam's output, and reviewing drawings before submission. Designing without atmospheric pressure or gravity as a resource meant there was no passive fallback for any part of the process: every function had to be actively engineered.",
+			meta: 'Fusion 360 · COSMIC Capstone Challenge · 2025',
+			desc: 'Semi-autonomous orbital manufacturing payload designed and analyzed entirely by a student team to produce and inspect carbon fiber reinforced polymer test strips in microgravity. The system integrates mechanical compression, thermal curing, and post-cure inspection within a 300 W power limit, supported by mechanical and thermal analyses conducted by the team.',
+			role: 'Project Lead and CAD Co-Lead',
+			scope: 'Team structure, Gantt chart and work breakdown, client meetings, executive summary, manufacturing and cost modeling, part and assembly modeling in Fusion 360',
 			thumbnail: paniniPress,
 			images: [
 				{ src: paniniPress, alt: 'In-orbit heated press assembly' }
@@ -103,6 +113,12 @@
 			<h2 class="modal-title">{activeProject.title}</h2>
 			<p class="modal-meta">{activeProject.meta}</p>
 			<p class="modal-desc">{activeProject.desc}</p>
+			{#if activeProject.role || activeProject.scope}
+				<div class="modal-role-scope">
+					{#if activeProject.role}<p><strong>Role:</strong> {activeProject.role}</p>{/if}
+					{#if activeProject.scope}<p><strong>Scope:</strong> {activeProject.scope}</p>{/if}
+				</div>
+			{/if}
 			<div class="modal-images {activeProject.layout}">
 				{#each activeProject.images as img (img.src)}
 					<img src={img.src} alt={img.alt} class="modal-img" />
@@ -275,6 +291,23 @@
 		color: #29170f;
 		line-height: 1.6;
 		margin: 0 0 2rem 0;
+	}
+
+	.modal-role-scope {
+		margin: 0 0 2rem 0;
+	}
+
+	.modal-role-scope p {
+		font-family: 'Montserrat', sans-serif;
+		font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+		font-weight: 500;
+		color: #29170f;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.modal-role-scope strong {
+		font-weight: 700;
 	}
 
 	.modal-images {
